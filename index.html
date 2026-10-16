@@ -32,13 +32,8 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="TipTong">
 <style>html, body { background-color: #160751; }</style>
-<script>
-  if ("serviceWorker" in navigator) {
-    window.addEventListener("load", function () {
-      navigator.serviceWorker.register("/TipTong-pilot/sw.js");
-    });
-  }
-</script>
+<script>window.__TT_BASE__ = "/TipTong-pilot";</script>
+<script src="/TipTong-pilot/update-toast.js"></script>
 </head>
 
   <body>
@@ -48,6 +43,6 @@
     </noscript>
     <!-- The root element for your Expo app. -->
     <div id="root"></div>
-  <script src="/TipTong-pilot/_expo/static/js/web/entry-c75c120b036ce5c6f999bc8a43777e93.js" defer></script>
+  <script src="/TipTong-pilot/_expo/static/js/web/entry-06cbb44195a8730b1d73ddf19466c4e0.js" defer></script>
 </body>
 </html>

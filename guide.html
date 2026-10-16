@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Get TipTong</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Nunito:wght@700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --violet:#4E15FF; --dark:#160751; --green:#0FFFB9; --orange:#FF5400;
+  --lavender:#B6A6EB; --ink:#0B0424;
+  --display:Nunito,Montserrat,system-ui,sans-serif;
+  --sans:Montserrat,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;font-family:var(--sans);background:var(--ink);color:#fff;
+  -webkit-font-smoothing:antialiased;line-height:1.5}
+h1,h2,h3,p{margin:0}
+a{color:var(--green)}
+.wrap{max-width:860px;margin:0 auto;padding:0 24px}
+
+/* hero */
+.hero{padding:64px 0 40px;text-align:center;background:
+  radial-gradient(700px 380px at 50% -20%,rgba(78,21,255,.55),transparent 65%)}
+.hero h1{font-family:var(--display);font-weight:800;font-size:clamp(32px,6vw,52px);
+  letter-spacing:-.02em;line-height:1.08}
+.hero h1 em{font-style:normal;color:var(--green)}
+.hero p{margin-top:16px;font-size:18px;color:rgba(255,255,255,.72)}
+
+/* link + QR card */
+.getcard{margin:36px auto 0;max-width:560px;background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.12);border-radius:24px;padding:28px;
+  display:flex;align-items:center;gap:26px;text-align:left}
+.getcard img{width:150px;height:150px;border-radius:12px;background:#fff;padding:6px;flex:none}
+.getcard .lbl{font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--green)}
+.getcard p{margin-top:8px;color:rgba(255,255,255,.72);font-size:15px}
+.getcard a.url{display:inline-block;margin-top:12px;font-weight:700;font-size:15px;
+  color:var(--dark);background:var(--green);text-decoration:none;
+  padding:10px 18px;border-radius:100px;word-break:break-all}
+
+/* platform sections */
+.platforms{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:48px 0}
+.plat{background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.11);
+  border-radius:24px;padding:26px}
+.plat h2{font-family:var(--display);font-weight:800;font-size:22px;display:flex;align-items:center;gap:10px}
+.plat h2 svg{flex:none}
+.plat .via{font-size:13px;color:var(--lavender);margin-top:2px;margin-left:34px}
+ol.steps{list-style:none;margin:22px 0 0;padding:0;display:grid;gap:16px}
+ol.steps li{display:flex;gap:14px;align-items:flex-start}
+.num{flex:none;width:28px;height:28px;border-radius:50%;background:var(--violet);
+  font-weight:800;font-size:14px;display:grid;place-items:center}
+ol.steps p{font-size:15px;color:rgba(255,255,255,.86)}
+ol.steps p b{color:#fff}
+.chip{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.1);
+  border:1px solid rgba(255,255,255,.18);border-radius:8px;padding:2px 9px;
+  font-size:13px;font-weight:700;white-space:nowrap}
+.chip svg{flex:none}
+
+/* after install */
+.after{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:56px}
+.note{border-radius:24px;padding:24px;border:1px solid rgba(255,255,255,.11)}
+.note.login{background:linear-gradient(135deg,rgba(78,21,255,.35),rgba(78,21,255,.12))}
+.note.offline{background:linear-gradient(135deg,rgba(15,255,185,.16),rgba(15,255,185,.05))}
+.note h3{font-family:var(--display);font-weight:800;font-size:17px;display:flex;gap:9px;align-items:center}
+.note p{margin-top:10px;font-size:14.5px;color:rgba(255,255,255,.75)}
+
+footer{border-top:1px solid rgba(255,255,255,.1);padding:22px 0 34px;
+  text-align:center;font-size:13px;color:rgba(255,255,255,.45)}
+
+@media (max-width:640px){
+  .platforms,.after{grid-template-columns:1fr}
+  .getcard{flex-direction:column;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="wrap">
+    <h1>TipTong, <em>on your devices</em></h1>
+    <p>The app on your phone, the extension in Chrome — each takes under a minute.</p>
+    <div class="getcard">
+      <img src="data:image/png;base64,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" alt="QR code linking to the TipTong pilot" width="150" height="150">
+      <div>
+        <div class="lbl">Step 0 — open TipTong</div>
+        <p>Scan the QR code with your phone camera, or type the address into your browser:</p>
+        <a class="url" href="https://maganino.github.io/TipTong-pilot/">maganino.github.io/TipTong-pilot</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="platforms">
+
+    <div class="plat">
+      <h2>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M16.7 12.9c0-2.5 2-3.7 2.1-3.7-1.1-1.7-2.9-1.9-3.5-1.9-1.5-.2-2.9.9-3.7.9-.8 0-2-.9-3.2-.9C6.8 7.3 5.3 8.2 4.5 9.6c-1.7 3-.4 7.4 1.2 9.8.8 1.2 1.8 2.5 3 2.4 1.2 0 1.7-.8 3.1-.8 1.4 0 1.9.8 3.2.8 1.3 0 2.1-1.2 2.9-2.4.9-1.4 1.3-2.7 1.3-2.8-.1 0-2.5-1-2.5-3.7zM14.4 5.6c.7-.8 1.1-1.9 1-3-1 0-2.1.6-2.8 1.4-.6.7-1.2 1.9-1 3 1 .1 2.1-.6 2.8-1.4z" fill="#fff"/></svg>
+        iPhone / iPad
+      </h2>
+      <div class="via">in Safari</div>
+      <ol class="steps">
+        <li><span class="num">1</span><p>Open the link above in <b>Safari</b> (the QR code opens it there automatically).</p></li>
+        <li><span class="num">2</span><p>Tap the <span class="chip"><svg width="14" height="16" viewBox="0 0 14 16" aria-hidden="true"><path d="M7 1v9M4 3.5 7 1l3 2.5" stroke="#0FFFB9" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><rect x="1.5" y="6.5" width="11" height="8.5" rx="1.5" stroke="#0FFFB9" stroke-width="1.6" fill="none"/></svg> Share</span> button at the bottom of the screen.</p></li>
+        <li><span class="num">3</span><p>Scroll down and tap <b>Add to Home Screen</b>, then <b>Add</b>.</p></li>
+      </ol>
+    </div>
+
+    <div class="plat">
+      <h2>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.5 3.2 15.7 8.5l-2.4 2.4-6.8-7.7zm-1 .9 7 7.9-7 7.9c-.3-.3-.5-.7-.5-1.2V5.3c0-.5.2-.9.5-1.2zm10.9 5.2 2.6 1.5c.9.5.9 1.9 0 2.4l-2.6 1.5-2.7-2.7 2.7-2.7zm-1.1 6.1 2.4 2.4-9.2 5.3 6.8-7.7z" fill="#fff"/></svg>
+        Android
+      </h2>
+      <div class="via">in Chrome</div>
+      <ol class="steps">
+        <li><span class="num">1</span><p>Open the link above in <b>Chrome</b>.</p></li>
+        <li><span class="num">2</span><p>Tap <b>Install app</b> when Chrome offers it — or open the <span class="chip">⋮ menu</span> and choose <b>Add to Home screen</b>.</p></li>
+        <li><span class="num">3</span><p>Confirm with <b>Install</b>.</p></li>
+      </ol>
+    </div>
+
+    <div class="plat" style="grid-column:1/-1">
+      <h2>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="2.5" y="4" width="19" height="13" rx="2" stroke="#fff" stroke-width="1.7"/><path d="M8 20.5h8M12 17v3.5" stroke="#fff" stroke-width="1.7" stroke-linecap="round"/></svg>
+        Computer — the Chrome extension
+      </h2>
+      <div class="via">in Chrome on your laptop/desktop · turns any web page or PDF into exercises</div>
+      <ol class="steps">
+        <li><span class="num">1</span><p>Download <a href="https://maganino.github.io/TipTong-pilot/tiptong-extension.zip"><b>tiptong-extension.zip</b></a> — this link always gives you the latest version. Double-click the file to unzip it; you get a folder with the same name.</p></li>
+        <li><span class="num">2</span><p>In Chrome, type <span class="chip">chrome://extensions</span> in the address bar and press Enter. Switch on <b>Developer mode</b> (toggle in the top-right corner).</p></li>
+        <li><span class="num">3</span><p>Click <b>Load unpacked</b> and select the unzipped folder. TipTong appears in the list — done.</p></li>
+        <li><span class="num">4</span><p>Click the <span class="chip">🧩 puzzle icon</span> next to the address bar and <b>pin</b> TipTong so it's always one click away.</p></li>
+      </ol>
+      <p style="margin-top:18px;font-size:13.5px;color:var(--lavender)">
+        Chrome may remind you at startup that a developer-mode extension is running — that's
+        expected during the pilot. Once TipTong is on the Chrome Web Store, it will install
+        by link and update itself.</p>
+    </div>
+
+  </div>
+
+  <div class="after">
+    <div class="note login">
+      <h3><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="6" r="3.2" stroke="#fff" stroke-width="1.6" fill="none"/><path d="M3 15.5c.8-2.8 3.2-4.3 6-4.3s5.2 1.5 6 4.3" stroke="#fff" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg> First time: log in once</h3>
+      <p>Open TipTong from your home screen and log in with the email and password you were invited with. You only do this once. No account yet? Request a demo at <a href="mailto:mina@tiptong.eu">mina@tiptong.eu</a> and we'll set one up for you.</p>
+    </div>
+    <div class="note offline">
+      <h3><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M2 8.5a8.5 8.5 0 0 1 14 0M4.5 11a5.2 5.2 0 0 1 9 0" stroke="#0FFFB9" stroke-width="1.6" fill="none" stroke-linecap="round"/><circle cx="9" cy="14" r="1.4" fill="#0FFFB9"/></svg> Works offline</h3>
+      <p>After that first visit, TipTong opens and plays even without internet — on the train, on a plane, anywhere. Your exercises live on your phone.</p>
+    </div>
+  </div>
+</div>
+
+<footer>TipTong pilot · October 2026 · questions? just reply to the message that sent you here · want a demo? <a href="mailto:mina@tiptong.eu">mina@tiptong.eu</a></footer>
+
+</body>
+</html>
